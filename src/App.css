@@ -1,0 +1,52 @@
+.body1 { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article article"
+    "nav article article";
+  grid-template-rows: 6% 1fr 70px;  
+  grid-template-columns: 15% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: fit-content;
+  margin: 0;
+  }  
+
+.pageHeader {
+  grid-area: header;
+  
+  }
+
+.mainArticle { 
+  grid-area: article;     
+margin-right: 3rem;
+margin-bottom: 1rem;
+box-shadow: rgb(0 0 0 / 19%) 0px 4px 13px 4px;
+/* background-image: linear-gradient(rgba(0, 0, 0, 0.324),rgba(0, 0, 0, 0.427)) , url("https://media.istockphoto.com/photos/bed-in-hallway-the-concept-of-working-stressful-environment-picture-id1227177907?b=1&k=20&m=1227177907&s=170667a&w=0&h=gSIg6oegHiWZ0DVjTOK2RbJFl4oFQxSKcPowmvfiiGk=");
+background-position: center;
+background-size: cover; */
+  }
+.mainNav { 
+  grid-area: nav; 
+  
+  background: rgb(64,64,64);
+  }
+  p{
+    color: #fff;
+  }
+  
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+#p{
+  color: #fff;
+}

@@ -1,0 +1,25 @@
+p{
+    color: black;
+}
+input{
+    width: 19rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+
+}
+span{
+    color: red;
+}
+.input1{
+    display: flex;
+    justify-content: start;
+}
+select{
+    width: 19rem;
+    height: 2rem;
+    outline: none;
+}
